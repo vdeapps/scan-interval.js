@@ -1,0 +1,14 @@
+{
+  "name": "scanInterval.js",
+  "main": "src/scanInterval.js",
+  "ignore": [
+    "/node_modules",
+    "/bower_components",
+    "/.git",
+    "/src",
+    "/test",
+    "/Gruntfile.js",
+    "/package.json",
+    "/index.html"
+  ]
+}
