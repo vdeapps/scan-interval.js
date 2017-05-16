@@ -8,6 +8,9 @@
   "authors": [
     { "name": "vdeApps" }
   ],
+  "dependencies": {
+    "vdeapps/vdeapps.js": "^1.0"
+  }
   "main": [
     "dist/js/scanInterval.js"
   ],
@@ -28,8 +31,5 @@
     "/Gruntfile.js",
     "/package.json",
     "/index.html"
-  ],
-  "dependencies": {
-    "vdeapps/vdeapps.js": ">=1.0"
-  }
+  ]
 }
