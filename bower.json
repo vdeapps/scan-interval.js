@@ -28,5 +28,8 @@
     "/Gruntfile.js",
     "/package.json",
     "/index.html"
-  ]
+  ],
+  "dependencies": {
+    "vdeapps/vdeapps.js": ">=1.0"
+  }
 }
