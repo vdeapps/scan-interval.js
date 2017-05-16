@@ -1,5 +1,5 @@
 {
-  "name": "scanInterval.js",
+  "name": "scaninterval.js",
   "description": "Manage many setInterval by tagname",
   "keywords": [
     "setTimeout",
