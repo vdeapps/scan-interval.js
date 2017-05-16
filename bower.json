@@ -9,7 +9,7 @@
     { "name": "vdeApps" }
   ],
   "dependencies": {
-    "vdeapps.js" : "vdeapps/vdeapps.js#^1.0"
+    "vdeapps/vdeapps.js" : "^1.0"
   },
   "main": [
     "dist/js/scanInterval.js"
