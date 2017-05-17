@@ -124,7 +124,6 @@ try {
 		,
 		stopall: function(){
 			for (var job in this.joblist) {
-				console.log(job)
 				this.stop(job)
 			}
 		}
@@ -143,11 +142,19 @@ try {
 		 * Return array of jobs by status
 		 */
 		,getjobs(status){
-			
+			var jobsname = [];
+			for (var job in this.joblist) {
+				if (this.joblist[job].status == status)
+				{
+					jobsname.push(job);
+				}
+			}
+			return jobsname;
 		}
 	});
 	
 } 
 catch (e) {
-	alert(e.message())
+	console.error(e.message())
 };
+
