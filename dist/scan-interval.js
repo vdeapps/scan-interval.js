@@ -93,7 +93,7 @@ try {
 		,
 		run : function(jobname) {
 			try{
-				if (this.joblist[jobname].id != null){
+				if (this.joblist[jobname].id == null){
 					this.joblist[jobname].id = setInterval( this.joblist[jobname].callback, this.joblist[jobname].interval );
 					this.joblist[jobname].status = this.status.RUN
 				}
