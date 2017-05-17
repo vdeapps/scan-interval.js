@@ -92,10 +92,25 @@ try {
 		 */
 		,
 		run : function(jobname) {
+			var that = this;
 			try{
 				if (this.joblist[jobname].id == null){
-					this.joblist[jobname].id = setInterval( this.joblist[jobname].callback, this.joblist[jobname].interval );
-					this.joblist[jobname].status = this.status.RUN
+
+					this.joblist[jobname].id = setInterval(function(){
+						
+						/*
+						 * Don't run if job already RUN
+						 */
+						if (that.joblist[jobname].status == that.status.RUN){
+							console.info("already run")
+							return
+						}
+						
+						that.joblist[jobname].status = that.status.STOP
+						that.joblist[jobname].callback.apply()
+						that.joblist[jobname].status = that.status.IDLE
+						
+					}, this.joblist[jobname].interval );
 				}
 			}
 			catch (e) {
@@ -157,4 +172,6 @@ try {
 catch (e) {
 	console.error(e.message())
 };
+
+
 
