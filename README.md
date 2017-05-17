@@ -1,10 +1,11 @@
 # scan-nterval.js
 Manage javascript multiple setInterval
 
-# Bower installation
+## Bower installation
 bower install vdeapps/scan-interval.js --save
 
-# Usage
+## Usage
+```javascript
 <script type="text/javascript" src="/bower_components/merge.js/dist/merge.js"></script>
 <script type="text/javascript" src="/bower_components/vdeapps.js/dist/vdeapps.js"></script>
 <script type="text/javascript" src="/bower_components/scan-interval.js/dist/scan-interval.js"></script>
@@ -38,3 +39,5 @@ vdeapps.get('scan-interval').getjobs(vdeapps.get('scan-interval').status.STOP)
 // Return an array of jobname with the RUN status
 vdeapps.get('scan-interval').remove('job1')
 })
+```
+
