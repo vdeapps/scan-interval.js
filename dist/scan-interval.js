@@ -93,8 +93,10 @@ try {
 		,
 		run : function(jobname) {
 			try{
-				this.joblist[jobname].id = setInterval( this.joblist[jobname].callback, this.joblist[jobname].interval );
-				this.joblist[jobname].status = this.status.RUN
+				if (this.joblist[jobname].id != null){
+					this.joblist[jobname].id = setInterval( this.joblist[jobname].callback, this.joblist[jobname].interval );
+					this.joblist[jobname].status = this.status.RUN
+				}
 			}
 			catch (e) {
 				
@@ -109,6 +111,7 @@ try {
 		stop : function(jobname) {
 			try{
 				clearInterval(this.joblist[jobname].id)
+				this.joblist[jobname].id = null
 				this.joblist[jobname].status = this.status.STOP
 			}
 			catch (e){}
