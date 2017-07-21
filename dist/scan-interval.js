@@ -95,7 +95,12 @@ try {
 			var that = this;
 			try{
 				if (this.joblist[jobname].id == null){
-
+					
+					// Run action at start
+					that.joblist[jobname].status = that.status.STOP;
+					that.joblist[jobname].callback.apply();
+					that.joblist[jobname].status = that.status.IDLE;
+					
 					this.joblist[jobname].id = setInterval(function(){
 						
 						/*
@@ -125,9 +130,11 @@ try {
 		,
 		stop : function(jobname) {
 			try{
-				clearInterval(this.joblist[jobname].id)
-				this.joblist[jobname].id = null
-				this.joblist[jobname].status = this.status.STOP
+				if (typeof this.joblist[jobname]!='undefined'){
+					clearInterval(this.joblist[jobname].id)
+					this.joblist[jobname].id = null
+					this.joblist[jobname].status = this.status.STOP
+				}
 			}
 			catch (e){}
 			return this
