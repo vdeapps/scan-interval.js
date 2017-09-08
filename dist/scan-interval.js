@@ -163,7 +163,7 @@ try {
 		/*
 		 * Return array of jobs by status
 		 */
-		,getjobs(status){
+		,getjobs: function(status){
 			var jobsname = [];
 			for (var job in this.joblist) {
 				if (this.joblist[job].status == status)
