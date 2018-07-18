@@ -4,7 +4,7 @@
  * Copyright vdeapps
  */
 
-class scanInterval extends vdeappsAddonAbstract {
+class vdeappsScanInterval extends vdeappsAddonAbstract {
     
     constructor() {
         super();

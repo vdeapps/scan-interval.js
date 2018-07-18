@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/vdeapps/vdeapps-scan-interval.js#readme",
   "dependencies": {
-    "merge": "^1.2.0"
+    "merge": "^1.2.0",
+    "vdeapps-addons.js": "^1.0.4"
   },
   "devDependencies": {
     "babel": "^6.23.0",
