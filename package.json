@@ -1,0 +1,50 @@
+{
+  "name": "vdeapps-scan-interval.js",
+  "version": "1.0.0",
+  "description": "Run action to the interval",
+  "main": "vdeapps-scan-interval.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "gulp clean && gulp dev && gulp minify",
+    "dev": "gulp clean dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vdeapps/vdeapps-scan-interval.js.git"
+  },
+  "keywords": [
+    "vdeapps",
+    "addons"
+  ],
+  "author": "vdeapps",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vdeapps/vdeapps-scan-interval.js/issues"
+  },
+  "homepage": "https://github.com/vdeapps/vdeapps-scan-interval.js#readme",
+  "dependencies": {
+    "merge": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-cssbeautify": "latest",
+    "gulp-csscomb": "latest",
+    "gulp-csso": "latest",
+    "gulp-less": "latest",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-rename": "latest",
+    "gulp-sass": "^3.2.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^2.0.0"
+  }
+}
